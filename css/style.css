@@ -1,0 +1,1499 @@
+/* font */
+@font-face {
+    font-family: 'inter';
+    src: url(../font/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+/* //font */
+
+/* set up */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'inter';
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* //set up */
+
+/* first page */
+#first-page {
+    width: 100%;
+    height: 100vh;
+    padding: 2em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* transition: all 0.3s; */
+}
+
+#first-page aside {
+    width: 30%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#first-page aside .top h1 {
+    font-size: 5vw;
+    font-weight: 750;
+    line-height: 5vw;
+}
+
+#first-page aside .top h1 span {
+    font-style: italic;
+}
+
+#first-page aside .top .line {
+    width: 100%;
+    height: 10px;
+    background-color: #000;
+    margin: 2vw 0;
+}
+
+#first-page aside .top p {
+    font-size: 0.95rem;
+}
+
+/* #first-page aside .top h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    margin: 2vw 0;
+} */
+
+#first-page .bottom .li, .ig, .em {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+}
+
+#first-page .bottom .li p {
+    font-weight: 600;
+}
+
+#first-page .bottom .ig p {
+    font-weight: 600;
+}
+
+#first-page .bottom .em p {
+    font-weight: 600;
+}
+
+/* Jaab collage */
+.jaab-imgs {
+    width: 60%;
+    height: 100%;
+    margin-left: 3vw;
+}
+
+.jaab-imgs-wrap {
+    width: 96%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.jaab1 {
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    transform: translateX(-50%);
+    z-index: 99;
+    filter: grayscale(100%);
+}
+
+.jaab1:hover {
+    filter: grayscale(0);
+    transition: 0.2s;
+}
+
+.jaab1:hover p {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.jaab1 img {
+    width: 95%;
+}
+
+.jaab1 p {
+    font-weight: 800;
+    position: absolute;
+    z-index: 99;
+    top: 70%;
+    left: -4vw;
+    opacity: 0;
+}
+
+.jaab2 {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 98;
+    filter: grayscale(100%);
+}
+
+.jaab2:hover {
+    filter: grayscale(0);
+    transition: 0.2s;
+}
+
+.jaab2:hover p {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.jaab2 img {
+    width: 35%;
+}
+
+.jaab2 p {
+    font-weight: 800;
+    position: absolute;
+    z-index: 99;
+    top: 35%;
+    left: -0.5vw;
+    opacity: 0;
+}
+
+.jaab3 {
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    z-index: 98;
+    filter: grayscale(100%);
+}
+
+.jaab3:hover {
+    filter: grayscale(0);
+    transition: 0.2s;
+}
+
+.jaab3:hover p {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.jaab3 img {
+    width: 90%;
+}
+
+.jaab3 p {
+    font-weight: 800;
+    position: absolute;
+    z-index: 99;
+    top: 18%;
+    left: 60%;
+    opacity: 0;
+}
+
+.jaab4 {
+    width: 45%;
+    position: absolute;
+    bottom: 15vw;
+    left: 40%;
+    z-index: 97;
+    filter: grayscale(100%);
+}
+
+.jaab4:hover {
+    filter: grayscale(0);
+    transition: 0.2s;
+}
+
+.jaab4:hover p {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.jaab4 img {
+    width: 90%;
+}
+
+.jaab4 p {
+    font-weight: 800;
+    position: absolute;
+    z-index: 99;
+    top: -1vw;
+    left: 18%;
+    opacity: 0;
+}
+
+.jaab5 {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    position: absolute;
+    bottom: 13vw;
+    left: 20%;
+    z-index: 97;
+    filter: grayscale(100%);
+}
+
+.jaab5:hover {
+    filter: grayscale(0);
+    transition: 0.2s;
+}
+
+.jaab5:hover p {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.jaab5 p {
+    font-weight: 800;
+    position: absolute;
+    z-index: 99;
+    top: -1vw;
+    left: 5vw;
+    opacity: 0;
+}
+
+.jaab5 img {
+    width: 85%;
+}
+
+.jaab6 {
+    position: absolute;
+    left: 12%;
+    bottom: 18vw;
+    z-index: 96;
+}
+
+.jaab6 img {
+    width: 25%;
+    filter: grayscale(100%);
+}
+
+.jaab6 img:hover {
+    filter: grayscale(0);
+    transition: 0.2s;
+}
+
+.jaab6:hover p {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.jaab6 p {
+    font-weight: 800;
+    position: absolute;
+    z-index: 99;
+    top: 10%;
+    left: -3vw;
+    opacity: 0;
+}
+
+.star {
+    position: absolute;
+    bottom: 10vw;
+    z-index: 95;
+}
+
+.star img {
+    width: 60%;
+}
+
+.star img:first-child {
+    position: absolute;
+    opacity: 1;
+}
+
+#first-page .circle {
+    width: 34vw;
+    height: 34vw;
+    background-color: #AABDD9;
+    border: 3px solid transparent;
+    z-index: 90;
+    border-radius: 100%;
+    position: absolute;
+    left: 30%;
+    bottom: 10vw;
+
+}
+
+/* //Jaab collage */
+
+/* button */
+#first-page button {
+    width: 5vw;
+    height: 5vw;
+    border: none;
+    border-radius: 100%;
+    background-color: black;
+    cursor: pointer;
+}
+/* //button */
+
+
+/* //first page */
+
+
+
+/* second page */
+#second-page {
+    width: 100%;
+    height: 100vh;
+    margin-top: 15vw;
+}
+
+#second-page .grid-wrap {
+    width: 80vw;
+    margin-left: 2vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#second-page .grid-wrap 
+figure,
+.content,
+.blank,
+.architecture,
+.acting,
+.artndesign,
+.photography,
+.branding {
+    width: 16vw;
+    height: 16vw;
+}
+
+#second-page .grid-wrap figure img {
+    width: 100%;
+}
+
+#second-page .grid-wrap .dot {
+    width: 0.65vw;
+    height: 0.65vw;
+    background-color: #000;
+    border-radius: 100%;
+}
+
+#second-page .grid-wrap .content {
+    position: relative;
+}
+
+#second-page .grid-wrap .content p {
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#second-page .grid-wrap .content .dotone {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+#second-page .grid-wrap .content .dottwo {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+#second-page .grid-wrap .content .dotthree {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#second-page .grid-wrap .architecture {
+    position: relative;
+}
+
+#second-page .grid-wrap .architecture p {
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#second-page .grid-wrap .architecture .dotone {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+#second-page .grid-wrap .architecture .dottwo {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#second-page .grid-wrap .architecture .dotthree {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+#second-page .grid-wrap .acting {
+    position: relative;
+}
+
+#second-page .grid-wrap .acting p {
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+#second-page .grid-wrap .acting .dotone {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#second-page .grid-wrap .acting .dottwo {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+#second-page .grid-wrap .acting .dotthree {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#second-page .grid-wrap .artndesign {
+    position: relative;
+}
+
+#second-page .grid-wrap .artndesign p {
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#second-page .grid-wrap .artndesign .dotone {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+#second-page .grid-wrap .artndesign .dottwo {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+#second-page .grid-wrap .artndesign .dotthree {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#second-page .grid-wrap .photography {
+    position: relative;
+}
+
+#second-page .grid-wrap .photography p {
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+#second-page .grid-wrap .photography .dotone {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#second-page .grid-wrap .photography .dottwo {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+#second-page .grid-wrap .photography .dotthree {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#second-page .grid-wrap .branding {
+    position: relative;
+}
+
+#second-page .grid-wrap .branding p {
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#second-page .grid-wrap .branding .dotone {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#second-page .grid-wrap .branding .dottwo {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+#second-page .grid-wrap .branding .dotthree {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+/* //second page */
+
+
+
+/* third page */
+#third-page {
+    width: 100%;
+    height: 100vh;
+    margin-top: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#third-page .p-wrap {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    background-color: #AABDD9;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#third-page .p-wrap p {
+    width: 50%;
+}
+
+#third-page .p-wrap p span {
+    text-decoration: underline;
+}
+/* //third page */
+
+
+
+/* responsiveness */
+
+/* above 1023, below 1200 */
+@media screen and (min-width:1023px) and (max-width:1200px) {
+    /* first page */
+    #first-page aside .top h1 {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    #first-page aside .top p {
+        font-size: 0.85rem;
+        /* line-height: 1.65vw; */
+    }
+}
+
+/* above 700, below 1023 */
+@media screen and (min-width:768px) and (max-width:1022px) {
+    /* first page */
+    #first-page aside .top h1 {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    #first-page aside .top p {
+        font-size: 0.8rem;
+    }
+
+    #first-page aside .top .line {
+        height: 8px;
+    }
+
+    #first-page .bottom .li p {
+        font-size: 0.85rem;
+    }
+
+    #first-page .bottom .li a {
+        font-size: 0.85rem;
+    }
+
+    #first-page .bottom .ig p {
+        font-size: 0.85rem;
+    }
+
+    #first-page .bottom .ig a {
+        font-size: 0.85rem;
+    }
+
+    #first-page .bottom .em p {
+        font-size: 0.85rem;
+    }
+
+    #first-page .bottom .em a {
+        font-size: 0.85rem;
+    }
+
+    /* Jaab collage */
+    .jaab1 img {
+        width: 115%;
+    }
+
+    .jaab1 p {
+        left: 0;
+        top: 30%;
+        font-size: 0.85rem;
+    }
+
+    .jaab2 img {
+        width: 50%;
+    }
+
+    .jaab2 p {
+        font-size: 0.85rem;
+    }
+
+    .jaab3 {
+        left: 70%;
+    }
+
+    .jaab3 img {
+        width: 130%;
+    }
+
+    .jaab3 p {
+        top: -1vw;
+        left: 30%;
+        font-size: 0.85rem;
+    }
+
+    .jaab4 {
+        width: 50%;
+        left: 42%;
+        bottom: 19vw;
+    }
+
+    .jaab4 img {
+        width: 100%;
+    }
+
+    .jaab4 p {
+        font-size: 0.85rem;
+    }
+
+    .jaab5 {
+        left: 25%;
+        bottom: 22vw;
+    }
+
+    .jaab5 img {
+        width: 100%;
+    }
+
+    .jaab5 p {
+        top: 5vw;
+        left: 11vw;
+        font-size: 0.85rem;
+    }
+
+    .jaab6 {
+        bottom: 17vw;
+    }
+
+    .jaab6 img {
+        width: 30%;
+    }
+
+    .jaab6 p {
+        top: 12%;
+        left: -4vw;
+        font-size: 0.85rem;
+    }
+
+    .star {
+        left: -2vw;
+    }
+
+    #first-page .circle {
+        bottom: 20vw;
+        left: 35%;
+    }
+}
+
+/* below 767 */
+@media screen and (max-width:767px) {
+    /* first page */
+    #first-page {
+        flex-direction: column;
+    }
+    
+    #first-page aside {
+        width: 100%;
+    }
+
+    #first-page aside .top {
+        display: flex;
+    }
+
+    #first-page aside .top h1 {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    #first-page aside .top p {
+        font-size: 0.75rem;
+    }
+
+    #first-page aside .top .line {
+        width: 20px;
+        height: 100%;
+        margin: 0 2vw;
+    }
+
+    #first-page button {
+        width: 4vw;
+        height: 4vw;
+        position: absolute;
+        bottom: 10%;
+        right: 7%;
+    }
+
+    #first-page .bottom {
+        width: 35%;
+        position: absolute;
+        top: 33%;
+        right: 5%;
+        z-index: 100;
+    }
+
+    #first-page .bottom .li p {
+        font-size: 0.75rem;
+    }
+
+    #first-page .bottom .li a {
+        font-size: 0.75rem;
+    }
+
+    #first-page .bottom .ig p {
+        font-size: 0.75rem;
+    }
+
+    #first-page .bottom .ig a {
+        font-size: 0.75rem;
+    }
+
+    #first-page .bottom .em p {
+        font-size: 0.75rem;
+    }
+
+    #first-page .bottom .em a {
+        font-size: 0.75rem;
+    }
+
+    /* Jaab's collage */
+    .jaab-imgs {
+        width: 80%;
+    }
+
+    .jaab1 img {
+        width: 100%;
+    }
+
+    .jaab1 p {
+        left: 0;
+        top: 30%;
+        font-size: 0.85rem;
+    }
+
+    .jaab2 img {
+        width: 40%;
+    }
+
+    .jaab2 p {
+        font-size: 0.85rem;
+        left: -2vw;
+    }
+
+    .jaab3 {
+        left: 70%;
+    }
+
+    .jaab3 img {
+        width: 100%;
+    }
+
+    .jaab3 p {
+        top: -1vw;
+        left: 35%;
+        font-size: 0.85rem;
+    }
+
+    .jaab4 {
+        width: 60%;
+        left: 45%;
+        bottom: 18vw;
+    }
+
+    .jaab4 img {
+        width: 70%;
+    }
+
+    .jaab4 p {
+        font-size: 0.85rem;
+    }
+
+    .jaab5 {
+        left: 25%;
+        bottom: 22vw;
+    }
+
+    .jaab5 img {
+        width: 80%;
+    }
+
+    .jaab5 p {
+        top: 5vw;
+        left: 11vw;
+        font-size: 0.85rem;
+    }
+
+    .jaab6 {
+        bottom: 14vw;
+        left: 6vw;
+    }
+
+    .jaab6 img {
+        width: 25%;
+    }
+
+    .jaab6 p {
+        top: 12%;
+        left: -4vw;
+        font-size: 0.85rem;
+    }
+
+    .star {
+        left: -3vw;
+    }
+
+    #first-page .circle {
+        width: 38vw;
+        height: 38vw;
+        bottom: 16vw;
+        left: 55%;
+    }
+
+    /* second page */
+    #second-page {
+        height: 70vw;
+    }
+
+    #second-page .grid-wrap {
+        width: 96vw;
+        margin-left: 2vw;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #second-page .img1 {
+        justify-self: right;
+    }
+
+    #second-page .content {
+        justify-self: center;
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+    }
+
+    #second-page .content p {
+        font-size: 1.5vw;
+    }
+
+    #second-page .grid-wrap .content .dotone {
+        bottom: 7%;
+        left: 7%;
+    }
+
+    #second-page .grid-wrap .content .dottwo {
+        top: 7%;
+        right: 7%;
+    }
+
+    #second-page .grid-wrap .content .dotthree {
+        top: 7%;
+        left: 7%;
+    }
+
+    #second-page .img2 {
+        justify-self: center;
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+
+    #second-page .img3 {
+        grid-row: 1 / 2;
+        grid-column: 5 / 6;
+    }
+
+    #second-page .architecture {
+        justify-self: center;
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+    }
+
+    #second-page .architecture p {
+        font-size: 1.5vw;
+    }
+
+    #second-page .grid-wrap .architecture .dotone {
+        top: 7%;
+        right: 7%;
+    }
+
+    #second-page .grid-wrap .architecture .dottwo {
+        bottom: 7%;
+        right: 7%;
+    }
+
+    #second-page .grid-wrap .architecture .dotthree {
+        bottom: 7%;
+        left: 7%;
+    }
+
+    #second-page .img4 {
+        justify-self: center;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    #second-page .acting {
+        justify-self: center;
+        grid-row: 4 / 5;
+        grid-column: 3 / 4;
+    }
+
+    #second-page .acting p {
+        font-size: 1.5vw;
+    }
+
+    #second-page .img5 {
+        justify-self: center;
+        grid-row: 2 / 3;
+        grid-column: 4 / 5;
+    }
+
+    #second-page .artndesign {
+        grid-row: 3 / 4;
+        grid-column: 5 / 6;
+    }
+
+    #second-page .artndesign p {
+        font-size: 1.5vw;
+    }
+    
+    #second-page .grid-wrap .artndesign .dotone {
+        top: 7%;
+        right: 7%;
+    }
+
+    #second-page .grid-wrap .artndesign .dottwo {
+        bottom: 7%;
+        left: 7%;
+    }
+
+    #second-page .grid-wrap .artndesign .dotthree {
+        bottom: 7%;
+        right: 7%;
+    }
+
+    #second-page .img6 {
+        grid-row: 4 / 5;
+        grid-column: 4 / 5;
+    }
+
+    #second-page .img7 {
+        justify-self: center;
+        grid-row: 3 / 4;
+        grid-column: 3 / 4;
+    }
+
+    #second-page .photography {
+        justify-self: right;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    #second-page .photography p {
+        font-size: 1.5vw;
+    }
+
+    #second-page .grid-wrap .photography .dotone {
+        top: 7%;
+        left: 7%;
+    }
+
+    #second-page .grid-wrap .photography .dottwo {
+        bottom: 7%;
+        left: 7%;
+    }
+
+    #second-page .grid-wrap .photography .dotthree {
+        bottom: 7%;
+        right: 7%;
+    }
+
+    #second-page .branding {
+        justify-self: right;
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+    }
+
+    #second-page .grid-wrap .branding p {
+        font-size: 1.5vw;
+    }
+
+    #second-page .grid-wrap .branding .dotone {
+        top: 7%;
+        left: 7%;
+    }
+
+    #second-page .grid-wrap .branding .dottwo {
+        top: 7%;
+        right: 7%;
+    }
+
+    #second-page .grid-wrap .branding .dotthree {
+        bottom: 7%;
+        left: 7%;
+    }
+
+    #second-page .img8 {
+        justify-self: right;
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+
+    /* third page */
+    #third-page {
+        margin-top: 0;
+        height: 80vw;
+        display: block;
+        position: relative;
+    }
+
+    #third-page .p-wrap {
+        width: 45vw;
+        height: 45vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #third-page .p-wrap p {
+        width: 70%;
+        font-size: 0.85rem;
+    }
+
+}
+
+/* below 480 (mobile) */
+@media screen and (max-width:480px) {
+    /* first page */
+    #first-page {
+        flex-direction: column;
+    }
+    
+    #first-page aside {
+        width: 100%;
+    }
+
+    #first-page aside .top {
+        display: flex;
+    }
+
+    #first-page aside .top h1 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    #first-page aside .top p {
+        display: none;
+    }
+
+    #first-page aside .top .line {
+        width: 85%;
+        height: 8px;
+        background-color: #000;
+        margin: 2vw 0;
+        position: absolute;
+        top: 15%;
+    }
+
+    #first-page button {
+        width: 4vw;
+        height: 4vw;
+        position: absolute;
+        bottom: 10%;
+        right: 7%;
+    }
+
+    #first-page .bottom {
+        width: 85%;
+        position: absolute;
+        top: 20%;
+        right: 7%;
+        z-index: 100;
+    }
+
+    #first-page .bottom .li p {
+        font-size: 0.75rem;
+    }
+
+    #first-page .bottom .li a {
+        font-size: 0.75rem;
+    }
+
+    #first-page .bottom .ig p {
+        font-size: 0.75rem;
+    }
+
+    #first-page .bottom .ig a {
+        font-size: 0.75rem;
+    }
+
+    #first-page .bottom .em p {
+        font-size: 0.75rem;
+    }
+
+    #first-page .bottom .em a {
+        font-size: 0.75rem;
+    }
+
+    /* Jaab's collage */
+    .jaab-imgs {
+        width: 80%;
+    }
+
+    .jaab1 img {
+        width: 100%;
+    }
+
+    .jaab1 p {
+        left: 0;
+        top: 30%;
+        font-size: 0.85rem;
+    }
+
+    .jaab2 img {
+        width: 40%;
+    }
+
+    .jaab2 p {
+        font-size: 0.85rem;
+        left: -2vw;
+    }
+
+    .jaab3 {
+        left: 70%;
+    }
+
+    .jaab3 img {
+        width: 100%;
+    }
+
+    .jaab3 p {
+        top: -1vw;
+        left: 35%;
+        font-size: 0.85rem;
+    }
+
+    .jaab4 {
+        width: 60%;
+        left: 45%;
+        bottom: 18vw;
+    }
+
+    .jaab4 img {
+        width: 70%;
+    }
+
+    .jaab4 p {
+        font-size: 0.85rem;
+    }
+
+    .jaab5 {
+        left: 25%;
+        bottom: 22vw;
+    }
+
+    .jaab5 img {
+        width: 80%;
+    }
+
+    .jaab5 p {
+        top: 5vw;
+        left: 11vw;
+        font-size: 0.85rem;
+    }
+
+    .jaab6 {
+        bottom: 14vw;
+        left: 6vw;
+    }
+
+    .jaab6 img {
+        width: 25%;
+    }
+
+    .jaab6 p {
+        top: 12%;
+        left: -4vw;
+        font-size: 0.85rem;
+    }
+
+    .star {
+        left: -3vw;
+    }
+
+    #first-page .circle {
+        width: 38vw;
+        height: 38vw;
+        bottom: 16vw;
+        left: 55%;
+    }
+
+    /* second page */
+    #second-page {
+        height: 70vw;
+    }
+
+    #second-page .grid-wrap {
+        width: 96vw;
+        margin-left: 2vw;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #second-page .img1 {
+        justify-self: right;
+    }
+
+    #second-page .content {
+        justify-self: center;
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+    }
+
+    #second-page .content p {
+        font-size: 1.5vw;
+    }
+
+    #second-page .grid-wrap .content .dotone {
+        bottom: 7%;
+        left: 7%;
+    }
+
+    #second-page .grid-wrap .content .dottwo {
+        top: 7%;
+        right: 7%;
+    }
+
+    #second-page .grid-wrap .content .dotthree {
+        top: 7%;
+        left: 7%;
+    }
+
+    #second-page .img2 {
+        justify-self: center;
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+
+    #second-page .img3 {
+        grid-row: 1 / 2;
+        grid-column: 5 / 6;
+    }
+
+    #second-page .architecture {
+        justify-self: center;
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+    }
+
+    #second-page .architecture p {
+        font-size: 1.5vw;
+    }
+
+    #second-page .grid-wrap .architecture .dotone {
+        top: 7%;
+        right: 7%;
+    }
+
+    #second-page .grid-wrap .architecture .dottwo {
+        bottom: 7%;
+        right: 7%;
+    }
+
+    #second-page .grid-wrap .architecture .dotthree {
+        bottom: 7%;
+        left: 7%;
+    }
+
+    #second-page .img4 {
+        justify-self: center;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    #second-page .acting {
+        justify-self: center;
+        grid-row: 4 / 5;
+        grid-column: 3 / 4;
+    }
+
+    #second-page .acting p {
+        font-size: 1.5vw;
+    }
+
+    #second-page .img5 {
+        justify-self: center;
+        grid-row: 2 / 3;
+        grid-column: 4 / 5;
+    }
+
+    #second-page .artndesign {
+        grid-row: 3 / 4;
+        grid-column: 5 / 6;
+    }
+
+    #second-page .artndesign p {
+        font-size: 1.5vw;
+    }
+    
+    #second-page .grid-wrap .artndesign .dotone {
+        top: 7%;
+        right: 7%;
+    }
+
+    #second-page .grid-wrap .artndesign .dottwo {
+        bottom: 7%;
+        left: 7%;
+    }
+
+    #second-page .grid-wrap .artndesign .dotthree {
+        bottom: 7%;
+        right: 7%;
+    }
+
+    #second-page .img6 {
+        grid-row: 4 / 5;
+        grid-column: 4 / 5;
+    }
+
+    #second-page .img7 {
+        justify-self: center;
+        grid-row: 3 / 4;
+        grid-column: 3 / 4;
+    }
+
+    #second-page .photography {
+        justify-self: right;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    #second-page .photography p {
+        font-size: 1.5vw;
+    }
+
+    #second-page .grid-wrap .photography .dotone {
+        top: 7%;
+        left: 7%;
+    }
+
+    #second-page .grid-wrap .photography .dottwo {
+        bottom: 7%;
+        left: 7%;
+    }
+
+    #second-page .grid-wrap .photography .dotthree {
+        bottom: 7%;
+        right: 7%;
+    }
+
+    #second-page .branding {
+        justify-self: right;
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+    }
+
+    #second-page .grid-wrap .branding p {
+        font-size: 1.5vw;
+    }
+
+    #second-page .grid-wrap .branding .dotone {
+        top: 7%;
+        left: 7%;
+    }
+
+    #second-page .grid-wrap .branding .dottwo {
+        top: 7%;
+        right: 7%;
+    }
+
+    #second-page .grid-wrap .branding .dotthree {
+        bottom: 7%;
+        left: 7%;
+    }
+
+    #second-page .img8 {
+        justify-self: right;
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+
+    /* third page */
+    #third-page {
+        margin-top: 0;
+        height: 80vw;
+        display: block;
+        position: relative;
+    }
+
+    #third-page .p-wrap {
+        width: 45vw;
+        height: 45vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #third-page .p-wrap p {
+        width: 70%;
+        font-size: 0.75rem;
+    }
+}
+
+/* //responsiveness */
+
+
+
+
