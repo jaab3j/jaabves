@@ -313,8 +313,7 @@ a {
 #first-page .circle {
     width: 34vw;
     height: 34vw;
-    background-color: #AABDD9;
-    border: 3px solid transparent;
+    border: 1px solid #000;
     z-index: 90;
     border-radius: 100%;
     position: absolute;
