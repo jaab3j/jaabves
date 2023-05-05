@@ -577,7 +577,7 @@ figure,
     width: 30vw;
     height: 30vw;
     border-radius: 100%;
-    background-color: #AABDD9;
+    border: 1px solid #000;
     text-align: center;
     display: flex;
     justify-content: center;
