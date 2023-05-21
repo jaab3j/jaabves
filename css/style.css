@@ -3,6 +3,7 @@
     font-family: 'inter';
     src: url(../font/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
+
 /* //font */
 
 /* set up */
@@ -21,6 +22,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 /* //set up */
 
 /* first page */
@@ -60,7 +62,7 @@ a {
 }
 
 #first-page aside .top p {
-    font-size: 0.95rem;
+    font-size: 0.75rem;
 }
 
 /* #first-page aside .top h1::after {
@@ -72,7 +74,9 @@ a {
     margin: 2vw 0;
 } */
 
-#first-page .bottom .li, .ig, .em {
+#first-page .bottom .li,
+.ig,
+.em {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1vw;
@@ -313,6 +317,7 @@ a {
 #first-page .circle {
     width: 34vw;
     height: 34vw;
+    /* background-color: #AABDD9; */
     border: 1px solid #000;
     z-index: 90;
     border-radius: 100%;
@@ -333,6 +338,7 @@ a {
     background-color: black;
     cursor: pointer;
 }
+
 /* //button */
 
 
@@ -341,233 +347,153 @@ a {
 
 
 /* second page */
-#second-page {
+#grid {
+    margin-top: 150px;
     width: 100%;
     height: 100vh;
-    margin-top: 15vw;
 }
 
-#second-page .grid-wrap {
-    width: 80vw;
-    margin-left: 2vw;
+.card {
+    width: 15vw;
+    height: 15vw;
+    position: relative;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #000;
+}
+
+.dot1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.dot2 {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.dot3 {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.title {
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.cardfront,
+.cardback,
+.cardfront-txt,
+.cardback-txt {
+    position: absolute;
+    border: 0.75px solid #000;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cardfront img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.cardback img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.cardfront-txt {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 0.75px solid #000;
+    border-radius: 20px;
+}
+
+.cardback {
+    transform: rotateY(180deg);
+    border: 0.75px solid #000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardback-txt {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    border: 0.75px solid #000;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.cardback-txt p {
+    font-size: 0.85rem;
+}
+
+.cardback-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cardback-link .travel-link span a {
+    text-decoration: underline;
+}
+
+#grid-wrap {
+    width: 90%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
 
-#second-page .grid-wrap 
-figure,
-.content,
-.blank,
-.architecture,
-.acting,
-.artndesign,
-.photography,
-.branding {
-    width: 16vw;
-    height: 16vw;
-}
-
-#second-page .grid-wrap figure img {
-    width: 100%;
-}
-
-#second-page .grid-wrap .dot {
-    width: 0.65vw;
-    height: 0.65vw;
-    background-color: #000;
-    border-radius: 100%;
-}
-
-#second-page .grid-wrap .content {
-    position: relative;
-}
-
-#second-page .grid-wrap .content p {
-    font-weight: 700;
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-}
-
-#second-page .grid-wrap .content .dotone {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-}
-
-#second-page .grid-wrap .content .dottwo {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-}
-
-#second-page .grid-wrap .content .dotthree {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-}
-
-#second-page .grid-wrap .architecture {
-    position: relative;
-}
-
-#second-page .grid-wrap .architecture p {
-    font-weight: 700;
-    text-transform: uppercase;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-}
-
-#second-page .grid-wrap .architecture .dotone {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-}
-
-#second-page .grid-wrap .architecture .dottwo {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-}
-
-#second-page .grid-wrap .architecture .dotthree {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-}
-
-#second-page .grid-wrap .acting {
-    position: relative;
-}
-
-#second-page .grid-wrap .acting p {
-    font-weight: 700;
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-}
-
-#second-page .grid-wrap .acting .dotone {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-}
-
-#second-page .grid-wrap .acting .dottwo {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-}
-
-#second-page .grid-wrap .acting .dotthree {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-}
-
-#second-page .grid-wrap .artndesign {
-    position: relative;
-}
-
-#second-page .grid-wrap .artndesign p {
-    font-weight: 700;
-    text-transform: uppercase;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-}
-
-#second-page .grid-wrap .artndesign .dotone {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-}
-
-#second-page .grid-wrap .artndesign .dottwo {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-}
-
-#second-page .grid-wrap .artndesign .dotthree {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-}
-
-#second-page .grid-wrap .photography {
-    position: relative;
-}
-
-#second-page .grid-wrap .photography p {
-    font-weight: 700;
-    text-transform: uppercase;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-}
-
-#second-page .grid-wrap .photography .dotone {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-}
-
-#second-page .grid-wrap .photography .dottwo {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-}
-
-#second-page .grid-wrap .photography .dotthree {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-}
-
-#second-page .grid-wrap .branding {
-    position: relative;
-}
-
-#second-page .grid-wrap .branding p {
-    font-weight: 700;
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-}
-
-#second-page .grid-wrap .branding .dotone {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-}
-
-#second-page .grid-wrap .branding .dottwo {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-}
-
-#second-page .grid-wrap .branding .dotthree {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-}
-
 /* //second page */
-
-
 
 /* third page */
 #third-page {
     width: 100%;
     height: 100vh;
-    margin-top: 15vw;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -591,7 +517,9 @@ figure,
 #third-page .p-wrap p span {
     text-decoration: underline;
 }
+
 /* //third page */
+
 
 
 
@@ -599,6 +527,7 @@ figure,
 
 /* above 1023, below 1200 */
 @media screen and (min-width:1023px) and (max-width:1200px) {
+
     /* first page */
     #first-page aside .top h1 {
         font-size: 4vw;
@@ -613,6 +542,7 @@ figure,
 
 /* above 700, below 1023 */
 @media screen and (min-width:768px) and (max-width:1022px) {
+
     /* first page */
     #first-page aside .top h1 {
         font-size: 4vw;
@@ -739,11 +669,12 @@ figure,
 
 /* below 767 */
 @media screen and (max-width:767px) {
+
     /* first page */
     #first-page {
         flex-direction: column;
     }
-    
+
     #first-page aside {
         width: 100%;
     }
@@ -758,7 +689,7 @@ figure,
     }
 
     #first-page aside .top p {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
     }
 
     #first-page aside .top .line {
@@ -1006,7 +937,7 @@ figure,
     #second-page .artndesign p {
         font-size: 1.5vw;
     }
-    
+
     #second-page .grid-wrap .artndesign .dotone {
         top: 7%;
         right: 7%;
@@ -1115,11 +1046,12 @@ figure,
 
 /* below 480 (mobile) */
 @media screen and (max-width:480px) {
+
     /* first page */
     #first-page {
         flex-direction: column;
     }
-    
+
     #first-page aside {
         width: 100%;
     }
@@ -1385,7 +1317,7 @@ figure,
     #second-page .artndesign p {
         font-size: 1.5vw;
     }
-    
+
     #second-page .grid-wrap .artndesign .dotone {
         top: 7%;
         right: 7%;
@@ -1492,7 +1424,3 @@ figure,
 }
 
 /* //responsiveness */
-
-
-
-
