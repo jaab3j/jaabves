@@ -470,6 +470,14 @@ a {
     text-decoration: underline;
 }
 
+.card3 .card-inner .cardback-txt p span a {
+    text-decoration: underline;
+}
+
+.card9 .card-inner .cardback-txt p span a {
+    text-decoration: underline;
+}
+
 #grid-wrap {
     width: 90%;
     margin: auto;
