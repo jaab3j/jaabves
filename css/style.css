@@ -45,9 +45,9 @@ a {
 }
 
 #first-page aside .top h1 {
-    font-size: 5vw;
+    font-size: 3.5vw;
     font-weight: 750;
-    line-height: 5vw;
+    line-height: 3.5vw;
 }
 
 #first-page aside .top h1 span {
@@ -62,17 +62,8 @@ a {
 }
 
 #first-page aside .top p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
-
-/* #first-page aside .top h1::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 10px;
-    background-color: black;
-    margin: 2vw 0;
-} */
 
 #first-page .bottom .li,
 .ig,
